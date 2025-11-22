@@ -46,6 +46,20 @@ El usuario puede generar dominios a partir de listas de pronombres, adjetivos, s
 
 ---
 
+## 🚀 Funcionalidad extra: Domain Hacks
+
+Además de generar dominios completos, se pueden crear **"domain hacks"**, donde la extensión forma parte del nombre del dominio.  
+
+Por ejemplo:  
+
+- En lugar de `puedes.es`, el **hack** sería `pued.es`  
+  - Se mantiene la palabra completa (`puedes`)  
+  - Se aprovecha la extensión `.es` para formar la palabra dentro del dominio  
+
+Esto permite crear dominios **más creativos** usando combinaciones con las extensiones.
+
+---
+
 ## 🛠 Tecnologías usadas
 
 - HTML5
