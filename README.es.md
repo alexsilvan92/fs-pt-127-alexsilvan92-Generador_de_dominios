@@ -1,47 +1,64 @@
-# Hola Mundo con Vanilla JS
+<!-- hide -->
+# Generador de Dominios
 
-Empieza a programar un sitio web JS/HTML/CSS en 30 segundos abriendo esta plantilla con nuestro puente de [One-Click Coding](https://s.4geeks.com/start?repo=https://github.com/4GeeksAcademy/vanillajs-hello) o localmente en tu computador.
+Este proyecto genera combinaciones de nombres de dominio usando JavaScript.  
+El usuario puede generar dominios a partir de listas de pronombres, adjetivos, sustantivos y extensiones de dominio.
 
-## Antes de empezar
+---
 
-Una vez tu editor de codigo este abierto, instala los paquetes escribiendo: `npm install`.
+## 📂 Estructura del proyecto
 
-### ¿Cómo ejecuto mi sitio web para ver los cambios en vivo?
-
-Escribe en la línea de comandos `$ npm run start` y escribe localhost en el navegador.
-
-### ¿Dónde escribo mi código?
-
-Depende del lenguaje, pero tienes `./src/app.js`, `./src/style.css` y `./src/index.html` respectivamente. Puedes agregar nuevos `.html` como desees, solo asegúrate de importarlo en el `app.js`.
-
-> Nota: recuerda que el flujo de trabajo de JS comienza dentro de `window.onload`.
-
-## Resolución de problemas
-
-### No veo mis cambios...
-
-Cada vez que cambies cualquier archivo dentro de la carpeta `./src`, la URL pública del sitio web se actualizará automáticamente (es un proceso llamado hot deploy). Recuerda también actualizar limpiando la caché (`command+shift+r` en Mac, `control+shift+r` en PC y Linux).
-
-### ¿Cómo incluyo más imágenes en mi proyecto?
-
-Agrégalas dentro de la carpeta `./src/assets/img` y luego impórtalas desde cualquiera de tus archivos JS. Ejemplo: `import "../assets/img/rigo-baby.jpg";`.
-
-### ¿Cómo incluyo más archivos JS?
-
-Simplemente agrega los archivos en la carpeta src e importa los archivos/variables en tu app.js. Ejemplo: `import myVar from "./file2.js"`.
-
-### ¿Cómo publico el sitio web?
-
-Esta plantilla es 100% compatible con el alojamiento gratuito de GitHub Pages. Publica tu sitio web ejecutando:
-
-```bash
-$ npm run deploy
+```text
+/src
+   ├─ app.js            // Versión que genera los dominios y los imprime en la consola
+   ├─ index.js          // Versión que genera los dominios y los muestra en el HTML
+   ├─ index.html        // HTML principal
+   └─ style.css         // Estilos opcionales
 ```
 
-¡Muy fácil y en solo un paso! Sube a tu rama __main__ y utiliza el alojamiento gratuito que viene con [GitHub Pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages), el proyecto está listo para ser publicado. Recuerda elegir ejecutar la Página de GitHub desde tu rama principal.
+---
 
-### Gracias
+## 📝 Descripción de los archivos JavaScript
 
-Esta plantilla fue creada como parte del [curso de programacion](https://4geeksacademy.com/es/curso-de-programacion-desde-cero?lang=es) de 4Geeks Academy por [Alejandro Sanchez](https://twitter.com/alesanchezr) y muchos otros contribuyentes. Descubre más sobre nuestro [Curso de Desarrollador Full Stack](https://4geeksacademy.com/es/coding-bootcamps/desarrollador-full-stack?lang=es), [Bootcamp de Ciencia de Datos](https://4geeksacademy.com/es/coding-bootcamps/curso-datascience-machine-learning?lang=es) o [Curso de Ciberseguridad](https://4geeksacademy.com/es/coding-bootcamps/curso-ciberseguridad?lang=es).
+### 1️⃣ `app.js`
+- Contiene la lógica básica para generar todos los dominios posibles.  
+- **Salida:** imprime todos los dominios en la consola del editor.  
+- **Uso:** útil para pruebas rápidas y para verificar que la lógica funciona correctamente.
 
-Puedes encontrar otras plantillas y recursos como este en la [página de GitHub de la escuela](https://github.com/4geeksacademy/).
+### 2️⃣ `index.js`
+- Contiene la misma lógica de generación de dominios, pero interactúa con el HTML.  
+- **Salida:** agrega cada dominio como un elemento `<li>` dentro de un `<ul>` en la página.  
+- Incluye un botón que, al pulsarlo, genera y muestra los dominios en el HTML.
+
+---
+
+## 💻 Cómo usar el proyecto
+
+### Versión principal (requerida)
+1. Ejecutar `app.js` en la consola del editor con Node.js.  
+2. Los dominios generados se imprimirán en la consola con `console.log()`.
+
+### Versión opcional (interactiva en HTML)
+1. Abrir `index.html` en un navegador.  
+2. Pulsar el botón Generar dominios.  
+3. Los dominios aparecerán listados dinámicamente en la página como elementos `<li>` dentro de un `<ul>`.  
+> Esta versión sirve para ver el resultado directamente en la página y practicar interacción con el DOM.
+
+---
+
+## 🛠 Tecnologías usadas
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla JS)
+- Bootstrap 5 (opcional para estilos de lista y botones)
+
+---
+
+## ✨ Resumen
+
+Este proyecto demuestra:
+
+- Uso de arrays y bucles anidados para generar combinaciones.
+- Manipulación del DOM para mostrar resultados dinámicamente.
+- Diferencia entre generar resultados en la consola (`app.js`) y en el HTML (`index.js`).

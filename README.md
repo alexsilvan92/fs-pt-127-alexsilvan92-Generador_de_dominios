@@ -1,49 +1,64 @@
 <!-- hide -->
-# Hello World with Vanilla JS
+# Domain Generator
 
-> 🇪🇸 [Spanish version of this readme is available](./README.es.md).
-<!-- endhide -->
-Start coding a JS/HTML/CSS website in 30 seconds by opening this template using 4Geeks' [One-Click Coding](https://s.4geeks.com/start?repo=https://github.com/4GeeksAcademy/vanillajs-hello) or locally on your computer.
+This project generates domain name combinations using JavaScript.  
+The user can generate domains from lists of pronouns, adjectives, nouns, and domain extensions.
 
-## Before you begin
+---
 
-Install the packages by typing: `npm install`.
+## 📂 Project structure
 
-### How do I run my website to see live changes?  
+```text
+/src
+   ├─ app.js // Version that generates the domains and prints them in the console
+   ├─ index.js // Version that generates the domains and displays them in the HTML
+   ├─ index.html // main HTML
+   └─ style.css // Optional styles
+```
 
-Type on the command line `$ npm run start` and type localhost on the browser.
+---
 
-### Where do I write my code?  
+## 📝 Description of JavaScript files
 
-It depends on the language, but you have `./src/app.js`, `./src/style.css` and `./src/index.html` respectively, you can add new `.html` as you please, just make sure to import it on the `app.js`.
+### 1️⃣ `app.js`
+- Contains the basic logic to generate all possible domains.  
+- **Output:** prints all domains to the editor console.  
+- **Use:** useful for quick tests and to verify that the logic is working correctly.
 
-> Note: remember that the JS workflow starts inside `window.onload`.
+### 2️⃣ `index.js`
+- Contains the same domain generation logic, but interacts with the HTML.  
+- **Output:** Adds each domain as a `<li>` element inside a `<ul>` on the page.  
+- Includes a button that, when pressed, generates and displays the domains in the HTML.
 
+---
 
-## Troubleshooting
+## 💻 How to use the project
 
-### I don't see my changes...
+### Major version (required)
+1. Run `app.js` in the editor console with Node.js.  
+2. The generated domains will be printed to the console with `console.log()`.
 
-Everytime you change any file inside the `./src` folder the website's public URL will automatically refresh the changes (it's a process called hot deploy)
-Remember also to refresh cleaning the cache (`command+shift+r` on Mac, `control+shift+r` on PC & Linux)
+### Optional version (interactive in HTML)
+1. Open `index.html` in a browser.  
+2. Click the Generate domains button.  
+3. Domains will be dynamically listed on the page as `<li>` elements inside a `<ul>`.  
+> This version is used to see the result directly on the page and practice interaction with the DOM.
 
-### How do I include more images in my project?
+---
 
-Add them inside the `./src/assets/img` folder and import them from any of your JS files. E.g: `import "../assets/img/rigo-baby.jpg";`
+## 🛠 Technologies used
 
-### How do I include more JS files?
+- HTML5
+-CSS3
+- JavaScript (Vanilla JS)
+- Bootstrap 5 (optional for list and button styles)
 
-Just add the files into the src folder and import the file/variables into your app.js. E.g: `import myVar from "./file2.js"`
+---
 
-### How do I publish the website?
+## ✨ Summary
 
-We have prepared the boilerplate to be compatible with [vercel](https://vercel.com/), very easy and in just one step! 
-You can read more about [deploying on vercel here](https://4geeks.com/docs/start/deploy-vercel).
+This project demonstrates:
 
-<!-- hide -->
-### Thank you
-
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning) or [CyberSecurity Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/cybersecurity)
-
-You can find other templates and resources like this at the [school's GitHub page](https://github.com/4geeksacademy/).
-<!-- endhide -->
+- Use of arrays and nested loops to generate combinations.
+- DOM manipulation to display results dynamically.
+- Difference between generating results in the console (`app.js`) and in the HTML (`index.js`).
